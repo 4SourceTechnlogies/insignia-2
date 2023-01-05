@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Oswald:wght@300;400;700&display=swap"
+    rel="stylesheet" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+  <title>Interior2</title>
+</head>
+
+<body id="Interior2">
+  <!-- Navbar -->
+  <div class="container-fluid headerTopWrapper fixed-top">
+    <div class="headerTop">
+      <div class="headerTop_left">
+        <ul class="list-unstyled">
+          <li>
+            <div class="icon">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="topHeader_leftText">
+              <p>
+                <a href="mailto:theinsignia@gmail.com">theinsignia@gmail.com</a>
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="icon">
+              <i class="fa-solid fa-phone-volume"></i>
+            </div>
+            <div class="topHeader_leftText">
+              <p><a href="tel:8981921713">8981921713</a></p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="headerTop_right">
+        <div class="socialIcons">
+          <ul>
+            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></li></a>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></li></a>
+            <li><a href="#"><i class="fa-brands fa-twitter"></i></li></a>
+            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></li></a>
+          </ul>
+        </div>
+      </div>
+    </div>
+  
+
+    <nav id="navTwo" class="navbar navbar-expand-lg navbar-light bg-transparent">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="images/logoFinal.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="Interior2toggler navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#home">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">ABOUT US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">SERVICES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">PORTFOLIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#workFlow">WORK FLOW</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonials">TESTIMONIALS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#blog">BLOG</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Banner Section -->
+  <div class="mainWrapper">
+    <div id="bannerCarousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="carouselFlexbox">
+            <div class="carouselImg"><img class="d-block w-100" src="images/bannerTwoImg.jpg" alt="First slide"></div>
+            <div class="carouselRight">
+              <img class="carouselRBG" src="images/carouselRightBg.png" alt="">
+              <div class="carouselText">
+                <h1 data-aos="zoom-in-right" data-aos-delay="250" data-aos-duration="1000">We make your <span class="drm">Dream </span> home
+                </h1>
+              </div>
+              <p>Lorem Ipsum is simply dummy text of the printing
+                and typesetting industry</p>
+              <button class="btn2"> view more</button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="carouselFlexbox">
+            <div class="carouselImg"><img class="d-block w-100" src="images/bannerBG.png" alt="First slide"></div>
+            <div class="carouselRight">
+              <img src="images/carouselRightBg.png" alt="">
+              <div class="carouselText">
+                <h1>We make your home</h1>
+                <div class="drm">dream</div>
+              </div>
+              <p>Lorem Ipsum is simply dummy text of the printing
+                and typesetting industry</p>
+              <button class="btn2"> view more</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="bannerCarouselControlPrev carousel-control-prev" href="#bannerCarousel" role="button"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="bannerCarouselControlNext carousel-control-next" href="#bannerCarousel" role="button"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+    <!-- About Section -->
+    <div id="about" class="about">
+      <h2 class="fade-up" data-aos="fade-up" data-aos-delay="100">ABOUT US</h2>
+      <div class="aboutInner">
+        <div class="aboutInnerLeft slide-in-left">
+          <h1>
+            We do everything to fulfill our <span>clients requirement</span>
+          </h1>
+          <p id="aboutPara">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry.
+          </p>
+          <button class="btn2">read more</button>
+        </div>
+        <div class="aboutInnerRight" data-aos="fade-left" data-aos-delay="1.5s">
+          <img class="lazy" src="images/abtImg2.png" alt="">
+        </div>
+      </div>
+    </div>
+
+    <!-- Stats-counter section -->
+    <div class="stats-counter">
+      <div id="stat2" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="3000">
+        <h1 class="counter" data-count="323">323</h1>
+        <h1 class="statsName">Happy Clients</h1>
+      </div>
+
+      <div id="stat2" data-aos="zoom-in" data-aos-delay="400" data-aos-duration="3000">
+        <h1 class="counter" data-count="323">323</h1>
+        <h1 class="statsName">Happy Clients</h1>
+      </div>
+
+      <div id="stat2" data-aos="zoom-in" data-aos-delay="600" data-aos-duration="3000">
+        <h1 class="counter" data-count="223">233</h1>
+        <h1 class="statsName">Happy Clients</h1>
+      </div>
+    </div>
+
+    <!-- Services section -->
+    <div id="services" class="services2">
+      <h2 data-aos="fade-up" data-aos-delay="1s"> OUR SERVICES</h2>
+      <div class="serviceInner">
+        <div class="serviceLeft">
+          <ul class="nav nav-tabs" id="servicesTabs" role="tablist">
+            <li class="nav-item active" role="presentation">
+              <button class="nav-link btn active" id="design-tab" data-bs-toggle="tab" data-bs-target="#designLayouts"
+                type="button" role="tab" aria-controls="design-tab" aria-selected="false">
+                3D DESIGN LAYOUTS
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link btn" id="renovation-tab" data-bs-toggle="tab" data-bs-target="#renovationWork"
+                type="button" role="tab" aria-controls="renovation-tab" aria-selected="false">
+                RENOVATION WORK
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link btn" id="interior-tab" data-bs-toggle="tab" data-bs-target="#interiorDecorator"
+                type="button" role="tab" aria-controls="interior-tab" aria-selected="false">
+                INTERIOR DECORATOR
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link btn" id="architechture-tab" data-bs-toggle="tab" data-bs-target="#highArchitechture"
+                type="button" role="tab" aria-controls="architechture-tab" aria-selected="false">
+                HIGH ARCHITECHTURE
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link btn" id="construction-tab" data-bs-toggle="tab" data-bs-target="#constructionWork"
+                type="button" role="tab" aria-controls="construction-tab" aria-selected="false">
+                CONSTRUCTION WORK
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="serviceRight">
+          <div class="tab-content" id="servicesTabContents">
+            <div class="tab-pane fade show active" id="designLayouts" role="tabpanel" aria-labelledby="design-tab">
+              <div id="designImg">
+                <img src="images/Interior2Services2.png" alt="">
+                <div id="designImgHover">
+                  <h4>3D DESIGN LAYOUTS </h4>
+                  <button class="btn2">read more</button>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="renovationWork" role="tabpanel" aria-labelledby="renovation-tab">
+              <div id="designImg">
+                <img src="images/renovation.png" alt="">
+                <div id="designImgHover">
+                  <h4>RENOVATION WORK </h4>
+                  <button class="btn2">read more</button>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="interiorDecorator" role="tabpanel" aria-labelledby="interior-tab">
+              <div id="designImg">
+                <img src="images/interiorDesign.png" alt="">
+                <div id="designImgHover">
+                  <h4>INTERIOR DECORATOR </h4>
+                  <button class="btn2">read more</button>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="highArchitechture" role="tabpanel" aria-labelledby="architechture-tab">
+              <div id="designImg">
+                <img src="images/architechture.png" alt="">
+                <div id="designImgHover">
+                  <h4>HIGH ARCHITECHTURE </h4>
+                  <button class="btn2">read more</button>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="constructionWork" role="tabpanel" aria-labelledby="construction-tab">
+              <div id="designImg">
+                <img src="images/construction.jpg" alt="">
+                <div id="designImgHover">
+                  <h4>CONSTRUCTION WORK </h4>
+                  <button class="btn2">read more</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Projects Section -->
+    <div id="portfolio" class="projectSetion">
+      <h2 data-aos="fade-up" data-aos-delay="1s">OUR PROJECTS</h2>
+      <div class="ourProjects ">
+        <ul class="nav justify-content-center nav-fill flex-column flex-sm-row" id="projectsTabs" role="tablist"
+          data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000">
+          <li class="nav-item flex-sm-fill text-sm-center active" role="presentation">
+            <button class="nav-link active" id="recent-tab" data-bs-toggle="tab" data-bs-target="#recentProjects"
+              type="button" role="tab" aria-controls="profile-tab" aria-selected="false">
+              RECENT PROJECTS
+            </button>
+          </li>
+          <li class="nav-item flex-sm-fill text-sm-center" role="presentation">
+            <button class="nav-link" id="all-tab" data-bs-toggle="tab" data-bs-target="#allProjects" type="button"
+              role="tab" aria-controls="all-tab" aria-selected="true">
+              ALL PROJECTS
+            </button>
+          </li>
+          <li class="nav-item flex-sm-fill text-sm-center" role="presentation">
+            <button class="nav-link" id="kitchen-tab" data-bs-toggle="tab" data-bs-target="#kitchen" type="button"
+              role="tab" aria-controls="kitchen-tab-" aria-selected="false">
+              KITCHEN
+            </button>
+          </li>
+          <li class="nav-item flex-sm-fill text-sm-center" role="presentation">
+            <button class="nav-link" id="livingroom-tab" data-bs-toggle="tab" data-bs-target="#livingroom" type="button"
+              role="tab" aria-controls="lviingroom-tab" aria-selected="false">
+              LIVING ROOM
+            </button>
+          </li>
+          <li class="nav-item flex-sm-fill text-sm-center" role="presentation">
+            <button class="nav-link" id="construction-tab" data-bs-toggle="tab" data-bs-target="#construction"
+              type="button" role="tab" aria-controls="construction-tab" aria-selected="false">
+              CONSTRUCTION
+            </button>
+          </li>
+          <li class="nav-item flex-sm-fill text-sm-center" role="presentation">
+            <button class="nav-link" id="renovation-tab" data-bs-toggle="tab" data-bs-target="#renovation" type="button"
+              role="tab" aria-controls="renovation-tab" aria-selected="false">
+              RENOVATION
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content slide-in-left" id="projectsTabsContent">
+
+          <div class="tab-pane fade show active" id="recentProjects" role="tabpanel" aria-labelledby="recent-tab">
+            <div class="carousel slide" id="recentProjectsCarousel" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="w-100 row" alt="First slide">
+                    <div class="projectsLeft col-lg-6">
+                      <img class="lazyload" src="images/projects_2img.png" alt="">
+                    </div>
+                    <div class="projectsRight col-lg-6">
+                      <h1>
+                        House Renovation giving a <span>Modern Look</span>
+                      </h1>
+                      <p id="aboutPara">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry.
+                      </p>
+                      <button class="btn2">full details</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="w-100 row" alt="Second slide">
+                    <div class="projectsLeft col-lg-6">
+                      <img src="images/bannerTwoImg.png" alt="">
+                    </div>
+                    <div class="projectsRight col-lg-6">
+                      <h1>
+                        House Renovation giving a <span>Modern Look</span>
+                      </h1>
+                      <p id="aboutPara">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry.
+                      </p>
+                      <button class="btn2">full details</button>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <a class="projectsCarouselControlPrev carousel-control-prev" href="#recentProjectsCarousel" role="button"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="projectsCarouselControlNext carousel-control-next" href="#recentProjectsCarousel" role="button"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="allProjects" role="tabpanel" aria-labelledby="all-tab">
+            <div class="carousel slide" id="allProjectsCarousel" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="w-100 row" alt="First slide">
+                    <div class="projectsLeft col-lg-6">
+                      <img src="images/projects_2img.png" alt="">
+                    </div>
+                    <div class="projectsRight col-lg-6">
+                      <h1>
+                        House Renovation giving a <span>Modern Look</span>
+                      </h1>
+                      <p id="aboutPara">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry.
+                      </p>
+                      <button class="btn2">full details</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="w-100 row" alt="First slide">
+                    <div class="projectsLeft col-lg-6">
+                      <img src="images/bannerTwoImg.jpg" alt="">
+                    </div>
+                    <div class="projectsRight col-lg-6">
+                      <h1>
+                        House Renovation giving a <span>Modern Look</span>
+                      </h1>
+                      <p id="aboutPara">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry.
+                      </p>
+                      <button class="btn2">full details</button>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <a class="projectsCarouselControlPrev carousel-control-prev" href="#allProjectsCarousel" role="button"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="projectsCarouselControlNext carousel-control-next" href="#allProjectsCarousel" role="button"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="kitchen" role="tabpanel" aria-labelledby="kitchen-tab">
+            <div class="carousel slide" id="kitchenCarousel" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="w-100 row" alt="First slide">
+                    <div class="projectsLeft col-lg-6">
+                      <img src="images/kitchen.png" alt="">
+                    </div>
+                    <div class="projectsRight col-lg-6">
+                      <h1>
+                        House Renovation giving a <span>Modern Look</span>
+                      </h1>
+                      <p id="aboutPara">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry.
+                      </p>
+                      <button class="btn2">full details</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="w-100 row" alt="Second slide">
+                    <div class="projectsLeft col-lg-6">
+                      <img src="images/kitchen02.png" alt="">
+                    </div>
+                    <div class="projectsRight col-lg-6">
+                      <h1>
+                        House Renovation giving a <span>Modern Look</span>
+                      </h1>
+                      <p id="aboutPara">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry.
+                      </p>
+                      <button class="btn2">full details</button>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <a class="projectsCarouselControlPrev carousel-control-prev" href="#kitchenCarousel" role="button"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="projectsCarouselControlNext carousel-control-next" href="#kitchenCarousel" role="button"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="livingroom" role="tabpanel" aria-labelledby="livingroom-tab">
+            <div class="carousel slide" id="livingroomCarousel" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="w-100 row" alt="First slide">
+                    <div class="projectsLeft col-lg-6">
+                      <img src="images/livingRoom.png" alt="">
+                    </div>
+                    <div class="projectsRight col-lg-6">
+                      <h1>
+                        House Renovation giving a <span>Modern Look</span>
+                      </h1>
+                      <p id="aboutPara">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry.
+                      </p>
+                      <button class="btn2">full details</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="w-100 row" alt="Second slide">
+                    <div class="projectsLeft col-lg-6">
+                      <img src="images/livingRoom02.png" alt="">
+                    </div>
+                    <div class="projectsRight col-lg-6">
+                      <h1>
+                        House Renovation giving a <span>Modern Look</span>
+                      </h1>
+                      <p id="aboutPara">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry.
+                      </p>
+                      <button class="btn2">full details</button>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <a class="projectsCarouselControlPrev carousel-control-prev" href="#livingroomCarousel" role="button"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="projectsCarouselControlNext carousel-control-next" href="#livingroomCarousel" role="button"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="construction" role="tabpanel" aria-labelledby="construction-tab">
+            <div class="carousel slide" id="constructionCarousel" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="w-100 row" alt="First slide">
+                    <div class="projectsLeft col-lg-6">
+                      <img src="images/ProjectsConstruction.png" alt="">
+                    </div>
+                    <div class="projectsRight col-lg-6">
+                      <h1>
+                        House Renovation giving a <span>Modern Look</span>
+                      </h1>
+                      <p id="aboutPara">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry.
+                      </p>
+                      <button class="btn2">full details</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="w-100 row" alt="Second slide">
+                    <div class="projectsLeft col-lg-6">
+                      <img src="images/construction02.png" alt="">
+                    </div>
+                    <div class="projectsRight col-lg-6">
+                      <h1>
+                        House Renovation giving a <span>Modern Look</span>
+                      </h1>
+                      <p id="aboutPara">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry.
+                      </p>
+                      <button class="btn2">full details</button>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <a class="projectsCarouselControlPrev carousel-control-prev" href="#constructionCarousel" role="button"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="projectsCarouselControlNext carousel-control-next" href="#constructionCarousel" role="button"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="renovation" role="tabpanel" aria-labelledby="renovation -tab">
+            <div class="carousel slide" id="renovationCarousel" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="w-100 row" alt="First slide">
+                    <div class="projectsLeft col-lg-6">
+                      <img src="images/projectsRenovation.png" alt="">
+                    </div>
+                    <div class="projectsRight col-lg-6">
+                      <h1>
+                        House Renovation giving a <span>Modern Look</span>
+                      </h1>
+                      <p id="aboutPara">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry.
+                      </p>
+                      <button class="btn2">full details</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="w-100 row" alt="Second slide">
+                    <div class="projectsLeft col-lg-6">
+                      <img src="images/renovation02.png" alt="">
+                    </div>
+                    <div class="projectsRight col-lg-6">
+                      <h1>
+                        House Renovation giving a <span>Modern Look</span>
+                      </h1>
+                      <p id="aboutPara">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry.
+                      </p>
+                      <button class="btn2">full details</button>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <a class="projectsCarouselControlPrev carousel-control-prev" href="#renovationCarousel" role="button"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="projectsCarouselControlNext carousel-control-next" href="#renovationCarousel" role="button"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Work Flow Section -->
+    <div id="workFlow" class="workFLowTwo">
+      <h2 data-aos="fade-up" data-aos-delay="100">WORK FLOW</h2>
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="card" data-aos="flip-right">
+            <div class="workCard card-body">
+              <a href="#">
+                <h5 id="hoverWhite" class="card-title">STRATEGY</h5>
+              </a>
+              <h6 id="hoverWhite" class="card-subtitle mb-2 text-muted">01.</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card" data-aos="flip-right" data-aos-delay="200">
+            <div class="workCard card-body">
+              <a href="#">
+                <h5 id="hoverWhite" class="card-title">CONCEPT</h5>
+              </a>
+              <h6 id="hoverWhite" class="card-subtitle mb-2 text-muted">02.</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card" data-aos="flip-right" data-aos-delay="300">
+            <div class="workCard card-body">
+              <a href="#">
+                <h5 id="hoverWhite" class="card-title">DEVELOPMENT</h5>
+              </a>
+              <h6 id="hoverWhite" class="card-subtitle mb-2 text-muted">03.</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card" data-aos="flip-right" data-aos-delay="400">
+            <div class="workCard card-body">
+              <a href="#">
+                <h5 id="hoverWhite" class="card-title">OWN YOUR STYLE</h5>
+              </a>
+              <h6 id="hoverWhite" class="card-subtitle mb-2 text-muted">04.</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Testimonials Section -->
+    <div id="testimonials" class="testimonials2">
+      <h2 data-aos="fade-up" data-aos-delay="1s" data-aos-duration="6000">TESTIMONIALS</h2>
+
+      <div id="testimonialCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div id="testimonialRow" class="row">
+              <div class="testimonialBLocks col-lg-6 col-sm-12">
+                <div class="TestimonialsLeft">
+                  <img src="images/Quotes.png" alt="">
+                  <h3>Best Work For my Old House</h3>
+                  <p>Lorem Ipsum is simply dummy
+                    text of the printing and
+                    typesetting industry.</p>
+                  <h3 id="testimonialPerson">Sam Jones</h3>
+                  <p id="jobTitle">Entreprenuer</p>
+                </div>
+                <div class="TestimonialsRight">
+                  <img src="images/TestimonialSam.png" alt="">
+                </div>
+              </div>
+              <div class="testimonialBLocks col-lg-6 col-sm-12">
+                <div class="TestimonialsLeft">
+                  <img src="images/Quotes.png" alt="">
+                  <h3>Best Work For my Old House</h3>
+                  <p>Lorem Ipsum is simply dummy
+                    text of the printing and
+                    typesetting industry.</p>
+                  <h3 id="testimonialPerson">Serena Jones</h3>
+                  <p id="jobTitle">Entreprenuer</p>
+                </div>
+                <div class="TestimonialsRight">
+                  <img src="images/TestimonialSerena.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div id="testimonialRow" class="row">
+              <div class="testimonialBLocks col-lg-6">
+                <div class="TestimonialsLeft">
+                  <img src="images/Quotes.png" alt="">
+                  <h3>Best Work For my Old House</h3>
+                  <p>Lorem Ipsum is simply dummy
+                    text of the printing and
+                    typesetting industry.</p>
+                  <h3 id="testimonialPerson">Sam Jones</h3>
+                  <p id="jobTitle">Entreprenuer</p>
+                </div>
+                <div class="TestimonialsRight">
+                  <img src="images/testimony.png" alt="">
+                </div>
+              </div>
+              <div class="testimonialBLocks col-lg-6">
+                <div class="TestimonialsLeft">
+                  <img src="images/Quotes.png" alt="">
+                  <h3>Best Work For my Old House</h3>
+                  <p>Lorem Ipsum is simply dummy
+                    text of the printing and
+                    typesetting industry.</p>
+                  <h3 id="testimonialPerson">Serena Jones</h3>
+                  <p id="jobTitle">Entreprenuer</p>
+                </div>
+                <div class="TestimonialsRight">
+                  <img src="images/testimony.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="carousel-item">
+            <img class="d-block w-100" src="..." alt="Third slide">
+          </div> -->
+        </div>
+        <a class="testimonialCarouselControlPrev carousel-control-prev" href="#testimonialCarousel" role="button"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="testimonialCarouselControlNext carousel-control-next" href="#testimonialCarousel" role="button"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Blogs Section -->
+    <div id="blog" class="blogs2">
+      <h2 data-aos="fade-up" data-aos-delay="1s">BLOGS</h2>
+
+      <div class="blogsRow | row">
+        <div class="col-lg-4">
+          <div class="card" data-aos="fade-down" data-aos-delay="100" data-aos-duration="1000">
+            <div class="card-body">
+              <div class="card-top">
+                <div class="card-top-text">
+                  <h5 class="card-title">Topic Name(Furniture Color)</h5>
+                  <p>Lorem Ipsum is simply dummy text
+                    of the printing and typesetting
+                    industry.</p>
+                </div>
+                <div class="card-top-img">
+                  <div class="cardCalendar">
+                    <h4>23</h4>
+                    <h5>NOV</h5>
+                  </div>
+                  <div class="cardCalendarBG">
+                    <img src="images/calendarImgBG.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <img class="card-img" src="images/blog2img1.png" alt="Card image cap">
+              <a href="#" class="cardReadMore">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card" data-aos="fade-down" data-aos-delay="200" data-aos-duration="2000">
+            <div class="card-body">
+              <div class="card-top">
+                <div class="card-top-text">
+                  <h5 class="card-title">Topic Name(Furniture Color)</h5>
+                  <p>Lorem Ipsum is simply dummy text
+                    of the printing and typesetting
+                    industry.</p>
+                </div>
+                <div class="card-top-img">
+                  <div class="cardCalendar">
+                    <h4>23</h4>
+                    <h5>NOV</h5>
+                  </div>
+                  <div class="cardCalendarBG">
+                    <img src="images/calendarImgBG.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <img class="card-img" src="images/blog2img1.png" alt="Card image cap">
+              <a href="#" class="cardReadMore">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card" data-aos="fade-down" data-aos-delay="300" data-aos-duration="3000">
+            <div class="card-body">
+              <div class="card-top">
+                <div class="card-top-text">
+                  <h5 class="card-title">Topic Name(Furniture Color)</h5>
+                  <p>Lorem Ipsum is simply dummy text
+                    of the printing and typesetting
+                    industry.</p>
+                </div>
+                <div class="card-top-img">
+                  <div class="cardCalendar">
+                    <h4>23</h4>
+                    <h5>NOV</h5>
+                  </div>
+                  <div class="cardCalendarBG">
+                    <img src="images/calendarImgBG.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <img class="card-img" src="images/blog2img1.png" alt="Card image cap">
+              <a href="#" class="cardReadMore">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div id="contact" class="footer2-box row">
+      <div class="footer-even-col-left | col-lg-4 col-md-12">
+        <img class="footer2Logo" data-aos="fade-right" data-aos-duration="500" data-aos-delay="100"
+          data-aos-duration="800" src="images/logoFinal.png" alt="">
+        <h1 data-aos="zoom-in-right" data-aos-delay="250" data-aos-duration="1000">We make your <span>Dream </span> home
+        </h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+          industry's
+          standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
+      </div>
+      <div class="footer2-eColR footer-even-col-right | col-lg-4 col-md-12">
+        <div class="footer2Links links">
+          <h4>QUICK LINKS</h4>
+          <ul>
+            <li><a href="#">Home</li></a>
+            <li><a href="#">About Us</li></a>
+            <li><a href="#">Services</li></a>
+            <li><a href="#">Projects</li></a>
+            <li><a href="#">Work Flow</li></a>
+            <li><a href="#">Tetstimonials</li></a>
+            <li><a href="#">Blogs</li></a>
+            <li style="padding-bottom:0 ;"><a href="#">Contact</li></a>
+          </ul>
+        </div>
+      </div>
+      <div class="footer2last col-lg-4 col-md-12" id="footerLast">
+        <h4>CONTACT US</h4>
+        <div class="address">
+          1/2 Lorem Ipsum Address <br>
+          AK Complex <br>
+          Near RK Hospital <br>
+          Pin: 123456
+        </div>
+        <div class="footer2-contac contac">
+          <ul>
+            <li><i id="phone" class="fa-solid fa-phone-volume" data-aos="fade-left" data-aos-delay="500"></i>
+              <p>234 5678 /9012 3456</p>
+            </li>
+            <li><i class="fa-solid fa-globe" data-aos="fade-left" data-aos-delay="600"></i>
+              <p>www.bestinterior.com</p>
+            </li>
+            <li><i class="fa-solid fa-envelope" data-aos="fade-left" data-aos-delay="700"></i>
+              <p>bestinterior.com</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer2copyright copyright | w-full">
+      <div>
+         © 2023 The Insignia. All Rights Reserved.
+      </div>
+      <div>
+        Powered by Four Source Technologies
+      </div>
+    </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/e3a7f177f0.js" crossorigin="anonymous"></script>
+
+
+  <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    $(document).ready(() =>
+      AOS.init({
+        offset: 60, once: false, disable: 'phone', duration: 300,
+        initClassName: 'aos-init',
+        animatedClassName: 'aos-animate',
+        useClassNames: false,
+        disableMutationObserver: false,
+        debounceDelay: 50,
+        throttleDelay: 99,
+      }));
+
+
+  </script>
+</body>
+
+</html>

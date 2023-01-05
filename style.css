@@ -1,0 +1,1188 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  /* height: 100vh; */
+}
+
+body[data-aos-duration='4000'] [data-aos],
+[data-aos][data-aos][data-aos-duration='4000'] {
+  transition-duration: 4000ms;
+}
+
+section {
+  padding: 2% 4%;
+}
+
+.Interior2toggler {
+  font-size: inherit !important;
+}
+
+.mainWrapper{
+  position: relative;
+  top: 7.5rem;
+}
+
+/* Typography */
+@font-face {
+  font-family: "RosellindaAlyamore";
+  src: url(fonts/rosellindaAlyamore.otf);
+}
+
+@font-face {
+  font-family: "porticoOutline";
+  src: url(fonts/porticoOutline.otf);
+}
+
+h1 {
+  font-family: "oswald", sans-serif;
+  font-weight: 400;
+  font-size: 5rem;
+}
+
+h2 {
+  font-family: "oswald";
+  font-weight: 700;
+  font-size: 2.2rem;
+  color: #f4931e;
+  text-decoration: underline;
+  text-align: center;
+}
+
+h3 {
+  font-family: "Open Sans";
+  font-size: 1.8rem;
+  color: #010101;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2rem;
+}
+
+span {
+  font-family: "RosellindaAlyamore";
+  font-size: 6.5rem;
+  color: #f4931e;
+}
+
+/* Typography Ends */
+
+/* Header Section */
+  .headerTopWrapper {
+    width: 100%;
+    margin: 0 auto;
+    padding-inline: 0;
+  }
+
+  .headerTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.25rem 2rem;
+    border-bottom: 0.5px solid #dee3e8;
+    background: url(images/topHeaderBg.png);
+  }
+
+  .headerTop_left {
+    display: flex;
+  }
+
+  .list-unstyled {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+  }
+
+  .list-unstyled li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 2rem;
+  }
+
+  .list-unstyled li+li {
+    margin-left: 1.9rem;
+  }
+
+  .list-unstyled li:hover .icon i {
+    background-color: #f8aa1a;
+  }
+
+  .topHeader_leftText {
+    margin-left: 0.7rem;
+  }
+
+  .topHeader_leftText p {
+    margin-bottom: 0;
+    color: #747f8e;
+    font-size: 1.1rem;
+  }
+
+  .topHeader_leftText a {
+    color: inherit;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+
+  .icon i {
+    font-size: 12px;
+    background-color: #cecece;
+    color: white;
+    padding: 0.25rem 0.3rem;
+    border-radius: 100%;
+  }
+
+  #navTwo {
+    background: url(images/topHeaderBg.png);
+    background-size: cover;
+    background-position-y: 10%;
+    padding: 0rem 1rem;
+    transition: 2s ease;
+  }
+
+  #navTwo .navbar-nav {
+    margin-left: auto;
+  }
+
+  #navTwo .nav-link {
+    font-family: "oswald", sans-serif;
+    font-weight: 700;
+  }
+
+  .navbar-brand {
+    flex: 0 1 35%;
+  }
+
+  .navbar-brand img {
+    width: 25%;
+  }
+
+  .nav-link {
+    font-family: "EB Garamond", serif;
+    font-weight: 700;
+    padding-inline: 1rem !important;
+  }
+
+
+  @media (max-width:767px) {
+    .headerTopWrapper {
+      display: none;
+    }
+  }
+
+/* Header Section Ends */
+
+/* Banner Section */
+  .carouselFlexbox {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .carouselRight {
+    text-align: right;
+    padding-right: 4rem;
+    padding-top: 4rem;
+    background-color: #f3f3f3;
+  }
+
+  .carouselRight img {
+    position: absolute;
+    right: 29rem;
+    width: 21%;
+  }
+
+  .carouselImg {
+    flex: 1 4 105%;
+  }
+
+  .carouselText {
+    position: relative;
+    padding-left: 2rem;
+  }
+
+  .carouselText h1 {
+    text-transform: uppercase;
+  }
+
+  .drm {
+    position: absolute;
+    font-family: "RosellindaAlyamore";
+    color: #f4931e;
+    font-size: 10rem;
+    left: 16rem;
+    bottom: -5.6rem;
+    text-transform: lowercase;
+  }
+
+  .carouselRight p {
+    padding-top: 2rem;
+    padding-left: 6rem;
+  }
+
+  .btn2 {
+    padding: 1rem 2rem;
+    background-color: #f4931e;
+    border: none;
+    margin-top: 2rem;
+    color: white;
+    font-family: "oswald";
+    letter-spacing: 0.07em;
+    transition: 0.2s ease;
+  }
+
+  .btn2:hover {
+    background-color: transparent;
+    color: #f4931e;
+  }
+
+  .socialIcons ul {
+    padding-block: 0.3rem;
+    margin: 0 auto;
+  }
+
+  .socialIcons ul li {
+    display: inline;
+    padding: 0.2rem;
+  }
+
+  .socialIcons li>a {
+    color: white;
+    background-color: #cecece;
+    font-size: 14px;
+    padding: 0.05rem 0.3rem;
+    border-radius: 100%;
+  }
+
+  .socialIcons li:hover>a {
+    background-color: #f8aa1a;
+  }
+
+  .socialIcons li:nth-child(1)>a {
+    padding: 0.05rem 0.4rem;
+  }
+
+  /* Responsive */
+  @media (max-width:767px) {
+    h1 {
+      font-size: 3.5rem;
+    }
+
+    .drm {
+      font-size: 7rem;
+      bottom: -4rem;
+      left: 10rem;
+    }
+
+    .bannerCarouselControlNext,
+    .bannerCarouselControlPrev {
+      display: none;
+    }
+
+    .carouselFlexbox {
+      flex-direction: column;
+    }
+
+    .carouselRight {
+      text-align: left;
+      padding: 1rem;
+    }
+
+    .carouselRBG {
+      display: none;
+    }
+
+    .carouselRight p {
+      padding-left: 1rem;
+    }
+
+    .carousel-item img {
+      top: -4.5rem;
+    }
+
+    .carousel-caption img {
+      width: 31%;
+      left: -16rem;
+    }
+
+    .carousel-caption h1 {
+      font-size: 2rem;
+      padding: 0 1rem;
+      top: -10.5rem;
+      left: -12.5rem;
+    }
+
+    .btn2 {
+      margin-left: 1rem;
+    }
+  }
+
+  @media (min-width:1429px) {
+    .carouselText h1{
+      font-size: 5.2rem;
+    }
+
+    .drm{
+      left: 17.5rem;
+    }
+  }
+
+  @media (min-width:1900px) {
+    .drm{
+      left: 16.5rem;
+      bottom: -4rem;
+    }
+
+    .headerTop, #navTwo{
+      padding-inline: 3rem;
+    }
+  }
+
+/* Banner Section Ends */
+
+/* About Section */
+  #Interior2 .about {
+    display: block;
+    padding: 2rem 0;
+    margin: 0;
+  }
+
+  #Interior2 .about h2 {
+    color: #f4931e;
+    text-decoration: underline;
+    text-align: center;
+  }
+
+  .aboutInner {
+    display: flex;
+    flex-direction: row;
+    padding-top: 1.5rem;
+  }
+
+  .aboutInner h1 {
+    font-size: 3.8rem;
+  }
+
+  .aboutInnerLeft {
+    flex: 4 0 50%;
+    padding-left: 6%;
+  }
+
+  .aboutInnerLeft p {
+    padding-top: 2rem;
+    width: 70%;
+  }
+
+  .aboutInnerRight {
+    flex: 0 1 40%;
+  }
+
+  .aboutInner img {
+    max-width: 100%;
+  }
+
+  .aboutInner span {
+    border-bottom: 1px solid black;
+    line-height: 1;
+  }
+
+  @media (max-width: 767px) {
+    .navbar {
+      background-size: inherit;
+      padding: 0;
+    }
+
+    .aboutInner {
+      flex-direction: column-reverse;
+      padding-inline-start: 0;
+    }
+
+    span {
+      font-size: 5.5rem;
+    }
+
+    #About {
+      padding-inline: 0;
+    }
+
+    .aboutUs {
+      text-align: left;
+      padding-block: 2rem 0;
+    }
+
+    .aboutUs h2 {
+      font-size: 2rem;
+      padding-left: 2rem;
+    }
+
+    .aboutUs .sectionHeading {
+      padding-left: 2rem;
+    }
+
+    .aboutInnerLeft P {
+      width: 100%;
+    }
+  }
+
+/* AboutSection Ends */
+
+.nav-link:active{
+  color: #181818;
+}
+
+/* carousel Controls */
+.carousel-control-next,
+.carousel-control-prev {
+  opacity: 1;
+}
+
+.carousel-control-prev-icon {
+  background-color: black;
+}
+
+.carousel-control-next-icon {
+  background-color: #f4931e;
+}
+
+.bannerCarouselControlPrev {
+  top: inherit;
+  left: 36%;
+}
+
+.bannerCarouselControlNext {
+  top: inherit;
+  left: 38.55%;
+}
+
+.projectsCarouselControlPrev {
+  top: inherit;
+  left: -6%;
+}
+
+.projectsCarouselControlNext {
+  top: inherit;
+  left: -3.28%;
+}
+
+.testimonialCarouselControlPrev {
+  top: inherit;
+  left: 41%;
+  bottom: -1rem;
+}
+
+.testimonialCarouselControlNext {
+  top: inherit;
+  right: 41.48%;
+  bottom: -1rem;
+}
+
+@media (min-width:1100px) {
+  .bannerCarouselControlNext {
+    left: 39.65%;
+  }
+
+  .bannerCarouselControlPrev {
+    left: 37.1%;
+  }
+}
+
+/* carousel Controls */
+
+/* Stats-counter section */
+.stats-counter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-block: 2rem;
+  background: url(images/statsCounterBG.png);
+  background-size: cover;
+}
+
+#stat2 h1 {
+  font-size: 2.5rem;
+}
+
+#stat2 .statsName {
+  font-size: 1.25rem;
+}
+
+.counter-animation {
+  transform: scale(1.5);
+  transition: 1s ease;
+}
+
+/* Stats-counter section Ends */
+
+/* Services section */
+.services2 {
+  padding: 2rem 4rem;
+}
+
+.services2 h2 {
+  text-decoration: underline;
+  text-align: center;
+}
+
+.serviceInner {
+  display: flex;
+  flex-direction: row;
+  padding-top: 2rem;
+}
+
+.serviceLeft {
+  flex: 1 0 60%;
+}
+
+.serviceLeft ul {
+  flex-direction: column;
+  list-style-type: "+";
+  margin-left: 0;
+  padding-left: 2rem;
+  padding-right: 10rem;
+}
+
+.serviceLeft ul>li {
+  padding-left: 1em;
+  text-indent: -1em;
+  font-family: "Open Sans", sans-serif;
+  padding-block: 0.5rem;
+  font-weight: 700;
+  border-bottom: 0.5px solid #b3b3b3;
+}
+
+.serviceLeft ul>li {
+  content: "+";
+  padding-right: 5px;
+  padding-bottom: 0.9rem;
+}
+
+.serviceLeft li a {
+  text-decoration: none;
+  color: inherit;
+  padding-left: 1rem;
+}
+
+.serviceLeft li:hover {
+  color: #f8aa1a;
+}
+
+#designImg {
+  position: relative;
+}
+
+#designImg div {
+  display: none;
+  position: absolute;
+  width: 280px;
+  height: 210px;
+  background-color: #fff;
+  opacity: 0.95;
+  z-index: 2;
+  top: 10%;
+  text-align: center;
+  left: 23%;
+  padding-top: 2rem;
+  padding-inline: 1rem;
+  transition: 0.8s ease;
+}
+
+#designImg{
+  transition: 0.7s ease;
+}
+
+#designImg:hover #designImgHover {
+  display: block;
+  transition: 0.7s ease;
+}
+
+#designImg img {
+  max-width: 100%;
+}
+
+.serviceLeft .nav-tabs .nav-link {
+  border: none;
+  color: inherit;
+}
+
+.serviceLeft .nav-tabs .nav-link:active {
+  border: none;
+  color: #f4931e;
+}
+
+@media (max-width:767px) {
+  .services2 {
+    padding-inline: 1rem;
+  }
+
+  .serviceInner {
+    flex-direction: column-reverse;
+  }
+
+  .serviceLeft ul {
+    padding-right: 1rem;
+  }
+}
+
+/* Services Section */
+
+/* Projects section */
+  #projectsTabs .nav-link {
+    border: none!important;
+    background: transparent!important;
+    padding-block: 1rem;
+  }
+
+  .ourProjects .nav-link {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    padding-inline: 2rem !important;
+  }
+
+  .projectsInner {
+    padding-top: 2rem;
+    padding-inline: 4rem;
+  }
+
+  .projectsLeft img {
+    max-width: 100%;
+  }
+
+  .projectsRight {
+    text-align: right;
+    padding-right: 3rem;
+  }
+
+  .ourProjects .nav-link {
+    color: #f4931e;
+  }
+
+  .ourProjects .nav-link:hover {
+    color: grey;
+    border-color: #f4931e;
+  }
+
+  @media (max-width:767px) {
+    .nav-fill button{
+      width: initial!important;
+    }
+
+    .projectsRight{
+      text-align: left;
+      padding: 1rem 2rem;
+    }
+
+    .projectsCarouselControlNext,
+    .projectsCarouselControlPrev{
+      display: none;
+    }
+
+    .projectsRight .btn2{
+      margin: 0;
+    }
+  }
+
+/* Projects Section Ends  */
+
+/* Work Flow Section */
+  .workFLowTwo {
+  margin-top: 2rem;
+  padding: 1rem 4rem 6rem;
+  background-image: url(images/WorkFlow2BG.png);
+  background-size: cover;
+  }
+
+  .workFLowTwo .row {
+    margin-top: 2rem;
+  }
+
+  .workCard {
+    display: block;
+    text-align: center;
+    padding: 4.5rem 1.5rem;
+    position: static;
+    height: 20rem;
+    transition: 0.7s ease;
+  }
+
+  .workCard .card-title {
+    color: black;
+    text-decoration: underline;
+  }
+
+  .workCard .card-subtitle {
+    font-family: "porticoOutline";
+    font-size: 8rem;
+  }
+
+  .workCard:hover {
+    background: url(images/workFLowCardImg.png);
+    opacity: 0.95;
+  }
+
+  .workCard:hover #hoverWhite {
+    color: white;
+  }
+
+  @media (max-width:767px) {
+    .workFLowTwo .row{
+      row-gap: 1rem;
+    }
+  }
+
+/* WorkFlow Section Ends */
+
+/* Testimonials Section */
+  #testimonialCarousel {
+    padding: 2rem 6rem;
+    text-align: right;
+  }
+
+  #testimonialRow {
+    margin: auto;
+    column-gap: 1%;
+  }
+
+  .testimonialBLocks {
+    border: 1px solid grey;
+    padding-inline: 1rem;
+    display: flex;
+    height: 18rem;
+    width: 48%;
+    margin: auto
+  }
+
+  .TestimonialsLeft {
+    flex: 1 0 64%;
+  }
+
+  .TestimonialsRight {
+    flex: 0 1 34%;
+    padding-inline: 1rem;
+  }
+
+  .TestimonialsLeft p {
+    font-size: 1.1rem;
+  }
+
+  #testimonialPerson {
+    color: #f4931e !important;
+    text-transform: capitalize;
+    font-size: 1.4rem !important;
+    margin-top: 1rem;
+  }
+
+  #jobTitle {
+    line-height: 0;
+    font-size: 1rem !important;
+  }
+
+  .TestimonialsLeft img {
+    max-width: 100%;
+    width: 23%;
+    position: relative;
+    right: 78%;
+    padding: 1rem;
+    padding-bottom: 0;
+  }
+
+  .TestimonialsRight img {
+    max-width: 100%;
+    margin-top: 3rem;
+  }
+
+  @media (max-width:767px) {
+    #testimonialCarousel{
+      padding: 1rem 0;
+    }
+
+    #testimonialRow{
+      row-gap: 1rem;
+    }
+
+    .testimonialBLocks{
+      width: 90%;
+    }
+
+    .testimonialCarouselControlNext,
+    .testimonialCarouselControlPrev{
+      display: none;
+    }
+  }
+
+/* Testimonials Sections Ends */
+
+/* Blogs Section */
+  .blogsRow {
+    padding: 2rem 4rem;
+  }
+
+  .blogsRow .card {
+    transition: 0.5s ease;
+  }
+
+  .blogsRow .card:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+  .card-img {
+    transition: 1s ease;
+  }
+
+  .card-top-text p {
+    font-size: 1rem !important;
+  }
+
+  .blogsRow .card:hover .card-img {
+    transform: scale(1.05);
+  }
+
+  .blogs2 .card-top {
+    display: flex;
+    flex-direction: row;
+    height: 7.5rem;
+  }
+
+  .card-top-text {
+    flex: 2 0 65%;
+  }
+
+  .card-top-img {
+    flex: 0 1 13.5%;
+    padding-left: 0.5rem;
+  }
+
+  .cardCalendar {
+    background-color: #f8aa1a;
+    z-index: 10;
+    position: relative;
+    height: 5.8rem;
+  }
+
+  .cardCalendar h4 {
+    font-size: 3rem;
+    color: #ffffffb5;
+    border-bottom: 1px solid wheat;
+    margin-inline: 0.5rem;
+  }
+
+  .cardCalendar h5 {
+    color: #ffffffb5;
+    font-size: 1.2rem;
+    margin-inline: 1rem
+  }
+
+  .cardCalendarBG {
+    z-index: 1;
+    position: relative;
+    transform: translate(0.6rem, -5.7rem);
+  }
+
+  .cardReadMore {
+    text-transform: uppercase;
+    font-family: "oswald";
+    font-weight: 700;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.3rem;
+    margin-inline: 36.05%;
+  }
+
+  .cardReadMore:hover {
+    color: #f4931e;
+  }
+
+  .blogs2 .card-top img {
+    max-width: 100%;
+  }
+
+  .blogs2 .card-img {
+    padding-top: 1rem;
+  }
+
+  .testimonials2,
+  .blogs2 {
+    padding-top: 2rem;
+  }
+
+  @media (max-width:767px) {
+    .blogsRow{
+      padding-inline: 1rem;
+      row-gap: 1rem;
+    }
+  }
+/* Blog Section Ends */
+
+
+/* Footer Section */
+
+  .footer-even-col-left {
+    margin-right: 2rem;
+  }
+
+  .footer-even-col-left img {
+    width: 65%;
+  }
+
+  .footer-even-col-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-inline: 0.7px solid #747f8e;
+    width: 30%;
+  }
+
+  .links {
+    padding-inline: 4rem;
+  }
+
+  .links ul li {
+    padding-block: 0.5rem;
+  }
+
+  .links li a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .links li a:hover {
+    color: #dfb947;
+  }
+
+  .links h4 {
+    margin-bottom: 1rem;
+  }
+
+  footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .contac p {
+    font-family: "poppins";
+    font-size: 1rem;
+    font-weight: 600;
+    display: inline;
+  }
+
+  .address {
+    line-height: 1.75rem;
+    font-family: "poppins";
+    font-weight: 600;
+    font-size: 1rem;
+    padding-block: 1rem;
+    border-bottom: 1.5px dashed black;
+  }
+
+  .contac {
+    padding-block: 1rem;
+  }
+
+  .contac i {
+    font-size: 1.5rem;
+    color: #181818;
+  }
+
+  .contac ul p {
+    margin-left: 1rem;
+    line-height: 0;
+  }
+
+  .contac ul li {
+    padding-top: 0.75rem;
+  }
+
+  #phone {
+    font-size: 0.9rem;
+    padding: 0.4rem;
+    border-radius: 50px;
+    background-color: #181818;
+    color: white;
+  }
+
+  .links ul li {
+    font-family: "EB Garamond", serif;
+    font-weight: 700;
+    font-style: 1.4rem;
+    text-transform: uppercase;
+  }
+
+  .copyright {
+    padding: 1% 4%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #dfb947;
+    background: url(images/footer_bottom_03.jpg);
+    font-family: "poppins";
+    font-size: 1.4rem;
+    color: #493909;
+  }
+
+  .footer2-box {
+    margin-top: 2rem;
+    padding: 1rem 4rem 3rem;
+    background: url(images/carouselRightBg.png);
+  }
+
+  .footer2Logo {
+    padding-bottom: 2rem;
+    padding-right: 8rem;
+  }
+
+  .footer2-box h1 {
+    text-transform: uppercase;
+    font-size: 3.2rem !important;
+  }
+
+  .footer2-box span {
+    font-size: 3.8rem !important;
+    text-transform: capitalize;
+  }
+
+  .footer2-box p {
+    font-size: 1rem !important;
+    line-height: 1.2;
+  }
+
+  .footer2Links {
+    font-family: 'Oswald';
+  }
+
+  .footer2Links ul {
+    padding-left: 0;
+  }
+
+  .footer2Links ul li {
+    list-style: none;
+    font-family: 'Oswald';
+    font-weight: 400;
+  }
+
+  .footer2-eColR {
+    font-family: 'Oswald';
+  }
+
+  .footer2-contac {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .footer2last {
+    padding-left: 4rem;
+  }
+
+  .footer2last h4 {
+    font-family: 'oswald';
+  }
+
+  .footer2last .address {
+    font-family: 'Oswald' !important;
+    font-weight: 400;
+  }
+
+  .footer2last ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .footer2last ul p {
+    font-family: 'oswald' !important;
+    font-weight: 400;
+  }
+
+  .footer2-contac i {
+    color: #f4931e;
+  }
+
+  .footer2-contac #phone {
+    color: black;
+    background-color: #f4931e;
+  }
+
+  .footer2copyright {
+    background: #f4931e;
+    color: white;
+    padding-block: 0.5rem;
+    font-family: 'open sans';
+    font-size: 1.2rem;
+  }
+
+  .footer2Links li a:hover {
+    color: #f4931e;
+  }
+
+  @media (max-width: 767px) {
+   .footer2-box{
+    padding-inline: 1rem;
+    padding-bottom: 2rem;
+   }
+
+   .footer2-box h1{
+    padding-left: 1rem;
+   }
+
+   .footer2Logo{
+    padding-left: 0;
+   }
+
+    .copyright {
+      font-size: 0.7rem;
+    }
+
+    .footer-even-col-left p {
+      font-size: 1.3rem;
+      line-height: 32px;
+      padding-inline: 1rem;
+    }
+
+    .footer-even-col-right{
+      width: 100%;
+      border: none;
+    }
+
+    .sectionHeading {
+      margin-block: 1rem;
+    }
+
+    .links {
+      padding-inline-start: 1rem;
+      margin-block: 1.5rem;
+      border-inline: none;
+      margin-right: 1.3rem;
+      border-block: 1.5px dashed black;
+      padding-block: 1rem;
+    }
+
+    .footer-even-col-left img {
+      width: 60%;
+      padding: 1rem 0 1rem 1rem;
+    }
+
+    footer h6 {
+      font-size: 1.5rem;
+      padding-inline: 0.5rem;
+      display: inline-block;
+    }
+
+    .address {
+      display: inline-block;
+      padding-right: 14rem;
+    }
+
+    #footerLast {
+      padding-left: 1rem;
+    }
+
+    .footer-even-col-right {
+      flex-direction: column;
+    }
+  }
+/* Footer Section Ends */
+
+
