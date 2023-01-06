@@ -156,6 +156,7 @@ span {
 
   .navbar-brand {
     flex: 0 1 35%;
+    margin-inline: 0;
   }
 
   .navbar-brand img {
