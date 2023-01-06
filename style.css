@@ -30,6 +30,7 @@ section {
 /* Typography */
 @font-face {
   font-family: "RosellindaAlyamore";
+  src: url(fonts/rosellindaAlyamore.ttf);
   src: url(fonts/rosellindaAlyamore.otf);
 }
 
