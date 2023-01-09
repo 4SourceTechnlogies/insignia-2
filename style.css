@@ -1317,8 +1317,12 @@ span {
       font-size: 5rem;
       top: 1rem;
     }
-  
+    
+    .aboutBody .yellowHLine{
+      bottom:3.2rem;
+    }
   }
+  
 
 /* About Ends  */
 
