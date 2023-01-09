@@ -1268,6 +1268,10 @@ span {
   .goalRightBottom ol li::marker {
       color: #f8aa1a;
   }
+
+  .aboutBody .yellowHLine{
+    position: relative;
+    bottom: 4.2rem;
   
   .yellowHLine{
     border-bottom: 3px solid #f8aa1a;
